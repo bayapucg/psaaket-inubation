@@ -11,6 +11,7 @@
 	<link href="img/favicon.png" rel="shortcut icon" />
 	<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrapValidator.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/themify-icons.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" />
@@ -41,25 +42,22 @@
 			</div>
 		</div>
 	</header>
-	<nav class="nav-section">
+	<nav class="nav-section" id="nav">
 		<div class="container">
-			<div class="nav-right">
-<a href="#"><i class="fa fa-search"></i></a>
-				<a href="#"><i class="fa fa-shopping-cart"></i></a>
-			</div>
+			
 			<ul class="main-menu">
 				<li class="active"><a href="index.html">Home</a>
 				</li>
-				<li><a href="about.html">About Us</a>
+				<li><a href="#about-section">About Us</a>
 				</li>
-				<li><a href="#">Event</a>
+				<li><a href="#course-structure">Course Structure</a>
 				</li>
-				<li><a href="course.html">COURSES</a>
+				<li><a href="#program-schedule">Program Schedule</a>
 				</li>
-				<li><a href="blog.html">blog</a>
+				<li><a href="#course-details">Course  Details</a>
+				<li><a href="#fee-structure">Fee Structure</a>
 				</li>
-				<li><a href="contact.html">Contact</a>
-				</li>
+				<li><a href="" data-toggle="modal" data-target="#myModal">Register </a>	</li>
 			</ul>
 		</div>
 	</nav>
@@ -100,7 +98,7 @@
 			<div class="row"></div>
 		</div>
 	</section>
-	<section class="service-section mt-4">
+	<section class="service-section mt-4" id="about-section">
 		<div class="container services">
 			<div class="section-title ">
 				<h3>ABOUT US</h3>
@@ -150,7 +148,7 @@ The program is a well balanced mix of theoretical and practical (industry orient
 	</marquee>
 		</div>
 	</section>
-	<section class="enroll-section spad set-bg" data-setbg="img/enroll-bg.jpg">
+	<section  id="course-structure" class="enroll-section spad set-bg" data-setbg="img/enroll-bg.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
@@ -198,7 +196,7 @@ The program is a well balanced mix of theoretical and practical (industry orient
 			</div>
 		</div>
 	</section>
-	<section class="courses-section spad">
+	<section class="courses-section spad" id="program-schedule">
 		<div class="container">
 			<div class="section-title text-center">
 				<h3>PSAAKET Incubation program schedule:</h3>
@@ -212,7 +210,7 @@ The program is a well balanced mix of theoretical and practical (industry orient
 			</div>
 		</div>
 	</section>
-	<section class="content-details-section">
+	<section class="content-details-section" id="course-details">
 	<div class="container audience">
 			<div class="audience ">
 				<h3 class="text-center ">Course content detail</h3>
@@ -268,7 +266,7 @@ The program is a well balanced mix of theoretical and practical (industry orient
 					<p class="  py-4">The module on “Tech skills” will cover training on generalized technology areas which include IT, communication, Project management, technical presentations, group discussions/ seminars (for students coming from any streams).</p>
 		 	</div>
 			<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-11 offset-md-1">
 				
 						
 						<ul>
@@ -287,97 +285,188 @@ The program is a well balanced mix of theoretical and practical (industry orient
 			</div>
 	</div>
 	</section>
+	<section class="content-details-section mt-4" id="fee-structure">
+	<div class="container audience">
+			<div class="audience mb-3 ">
+				<h4 class="text-center">Psaaket – Student Incubation Program (SIP) fee structure:</h4>
+					
+		 	</div>
+			<div class="row">
+			<div class="col-md-12">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Year</th>
+							<th>No. of hours of program</th>
+							<th>Fee per student per year</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>162</td>
+							<td>Rs. 10,000</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>314</td>
+							<td>Rs. 15,000</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>356</td>
+							<td>Rs. 20,000</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>299</td>
+							<td>Rs. 25,000</td>
+						</tr>
+					</tbody>
+			</table>
+		</div>
+			
+			</div>
+	</div>
+	</section>
+	<section>
 	
+	</section>
+	<!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title">Registration</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form id="defaultForm" method="post"  action="index.html">
+                      
+
+                        <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class=" control-label">Name</label>
+                            <div class="">
+                                <input type="text" class="form-control" name="username" />
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label class=" control-label">Email address</label>
+                            <div class="">
+                                <input type="text" class="form-control" name="email" />
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label class="control-label">Mobile</label>
+                            <div class="">
+                                <input type="text" class="form-control" name="password" />
+                            </div>
+                        </div>
+						<div class="form-group col-md-6">
+                            <label class="control-label">Education</label>
+                            <div class="">
+                                <input type="text" class="form-control" name="password" />
+                            </div>
+                        </div>
+						<div class="form-group col-md-6">
+                            <label class="control-label">College Name</label>
+                            <div class="">
+                                <input type="text" class="form-control" name="password" />
+                            </div>
+                        </div>
+						<div class="form-group col-md-6">
+                            <label class="control-label">Year </label>
+                            <div class="">
+                                <input type="text" class="form-control" name="password" />
+                            </div>
+                        </div>
+						<div class="form-group col-md-6">
+                            <label class="control-label">Password </label>
+                            <div class="">
+                                <input type="text" class="form-control" name="password" />
+                            </div>
+                        </div>
+						<div class="form-group col-md-6">
+                            <label class="control-label">Confirm Password </label>
+                            <div class="">
+                                <input type="text" class="form-control" name="password" />
+                            </div>
+                        </div>
+
+                       
+
+                        
+
+                        <div class="form-group">
+                            <div class="col-lg-9 col-lg-offset-3">
+                                <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Register</button>
+                              
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+        </div>
+        
+     
+        
+      </div>
+    </div>
+  </div>
 	<footer class="footer-section">
 		<div class="container footer-top">
 			<div class="row">
-				<div class="col-sm-6 col-lg-3 footer-widget">
+				<div class="col-sm-12 col-lg-4 footer-widget">
 					<div class="about-widget">
-						<img src="img/logo-light.png" alt="">
-						<p>orem ipsum dolor sit amet, consecter adipiscing elite. Donec minos varius, viverra justo ut, aliquet nisl.</p>
-						<div class="social pt-1">
-<a href="#"><i class="fa fa-twitter-square"></i></a>
-							<a href="#"><i class="fa fa-facebook-square"></i></a>
-							<a href="#"><i class="fa fa-google-plus-square"></i></a>
-							<a href="#"><i class="fa fa-linkedin-square"></i></a>
-							<a href="#"><i class="fa fa-rss-square"></i></a>
+					<div class="bg-white pt-4 px-2 text-center " >
+						<img style="width:100px;" src="img/logo.png" alt="">
 						</div>
+						<p class="mt-2">Flat-306, Fortune Signature Building, Nizampet X Roads, Sardar Patel Nagar (Near JNTU Metro station), KPHB, Hyderabad- 500072, Telangana, INDIA.</p>
+						
 					</div>
 				</div>
-				<div class="col-sm-6 col-lg-3 footer-widget">
-					<h6 class="fw-title">USEFUL LINK</h6>
-					<div class="dobule-link">
-						<ul>
-							<li><a href="#">Home</a>
-							</li>
-							<li><a href="#">About us</a>
-							</li>
-							<li><a href="#">Services</a>
-							</li>
-							<li><a href="#">Events</a>
-							</li>
-							<li><a href="#">Features</a>
-							</li>
-						</ul>
-						<ul>
-							<li><a href="#">Policy</a>
-							</li>
-							<li><a href="#">Term</a>
-							</li>
-							<li><a href="#">Help</a>
-							</li>
-							<li><a href="#">FAQs</a>
-							</li>
-							<li><a href="#">Site map</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-3 footer-widget">
-					<h6 class="fw-title">RECENT POST</h6>
-					<ul class="recent-post">
-						<li>
-							<p>Snackable study:How to break
-								<br>up your master's degree</p>
-<span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
-						</li>
-						<li>
-							<p>Open University plans major
-								<br>cuts to number of staff</p>
-<span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-6 col-lg-3 footer-widget">
+				
+			
+				<div class="col-sm-12 col-lg-4 footer-widget">
 					<h6 class="fw-title">CONTACT</h6>
 					<ul class="contact">
+					
 						<li>
-							<p><i class="fa fa-map-marker"></i> 40 Baria Street 133/2, NewYork City,US</p>
+							<p><i class="fa fa-phone"></i> 040-48541273</p>
 						</li>
 						<li>
-							<p><i class="fa fa-phone"></i> (+88) 111 555 666</p>
-						</li>
-						<li>
-							<p><i class="fa fa-envelope"></i>  <a href="https://colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5a33343c353e3f3f2839283f3b2e332c3f1a3d373b333674393537">[email&#160;protected]</a>
+							<p><i class="fa fa-envelope"></i> support@prachatech.com
 							</p>
 						</li>
 						<li>
-							<p><i class="fa fa-clock-o"></i> Monday - Friday, 08:00AM - 06:00 PM</p>
+							<p><i class="fa fa-clock-o"></i> Monday - Friday, 09:30AM - 07:00 PM</p>
 						</li>
 					</ul>
+				</div>
+					<div class="col-sm-12 col-lg-4 footer-widget">
+					<h5 class="text-white mb-4">PSAAKET, the school of start, by Pracha Technologies </h5>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2014258925105!2d78.3879078141668!3d17.497895588012454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f48aa2d613%3A0xe33ae6c3ea74c04e!2sPrachaTech+Software+Solutions!5e0!3m2!1sen!2sin!4v1560944433588!5m2!1sen!2sin" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 		<div class="copyright">
 			<div class="container">
 				<p>Copyright &copy;
-					All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Prachatech</a>
+					All rights reserved  by <a href="http://www.psaaket.com/" target="_blank">Prachatech</a>
 				</p>
 			</div>
 		</div>
 	</footer>
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrapValidator.js"></script>
 	<script src="js/jquery.countdown.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/magnific-popup.min.js"></script>
@@ -401,8 +490,181 @@ $(document).ready(function(){
 
 });
 </script>
+<script>
+	$("#nav ul li a[href^='#']").on('click', function(e) {
 
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 1000, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // Generate a simple captcha
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+    $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+    $('#defaultForm').bootstrapValidator({
+//        live: 'disabled',
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            firstName: {
+                group: '.col-lg-4',
+                validators: {
+                    notEmpty: {
+                        message: 'The first name is required and cannot be empty'
+                    }
+                }
+            },
+            lastName: {
+                group: '.col-lg-4',
+                validators: {
+                    notEmpty: {
+                        message: 'The last name is required and cannot be empty'
+                    }
+                }
+            },
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_\.]+$/,
+                        message: 'The username can only consist of alphabetical, number, dot and underscore'
+                    },
+                    remote: {
+                        type: 'POST',
+                        url: 'remote.php',
+                        message: 'The username is not available'
+                    },
+                    different: {
+                        field: 'password,confirmPassword',
+                        message: 'The username and password cannot be the same as each other'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required and cannot be empty'
+                    },
+                    identical: {
+                        field: 'confirmPassword',
+                        message: 'The password and its confirm are not the same'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'The password cannot be the same as username'
+                    }
+                }
+            },
+            confirmPassword: {
+                validators: {
+                    notEmpty: {
+                        message: 'The confirm password is required and cannot be empty'
+                    },
+                    identical: {
+                        field: 'password',
+                        message: 'The password and its confirm are not the same'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'The password cannot be the same as username'
+                    }
+                }
+            },
+            birthday: {
+                validators: {
+                    date: {
+                        format: 'YYYY/MM/DD',
+                        message: 'The birthday is not valid'
+                    }
+                }
+            },
+            gender: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            'languages[]': {
+                validators: {
+                    notEmpty: {
+                        message: 'Please specify at least one language you can speak'
+                    }
+                }
+            },
+            'programs[]': {
+                validators: {
+                    choice: {
+                        min: 2,
+                        max: 4,
+                        message: 'Please choose 2 - 4 programming languages you are good at'
+                    }
+                }
+            },
+            captcha: {
+                validators: {
+                    callback: {
+                        message: 'Wrong answer',
+                        callback: function(value, validator) {
+                            var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                            return value == sum;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Validate the form manually
+    $('#validateBtn').click(function() {
+        $('#defaultForm').bootstrapValidator('validate');
+    });
+
+    $('#resetBtn').click(function() {
+        $('#defaultForm').data('bootstrapValidator').resetForm(true);
+    });
+});
+</script>
 </body>
-<!-- Mirrored from colorlib.com/preview/theme/unica/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jun 2019 07:21:24 GMT -->
+
 
 </html>
